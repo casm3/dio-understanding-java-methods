@@ -1,3 +1,5 @@
+package first.lesson.activity;
+
 /**
  * Author: Carlos Melo
  */

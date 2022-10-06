@@ -1,3 +1,5 @@
+package first.lesson.activity;
+
 import java.util.Scanner;
 
 public class Calculator {

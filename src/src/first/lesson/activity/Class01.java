@@ -1,3 +1,7 @@
+package first.lesson.activity;
+
+import first.lesson.activity.Calculator;
+
 import java.util.Scanner;
 
 /**
@@ -9,7 +13,7 @@ public class Class01 {
 
     public static void main(String[] args) {
         /*
-        * Calculator
+        * first.lesson.activity.Calculator
         * */
         int num1;
         int num2;
@@ -29,7 +33,7 @@ public class Class01 {
         System.out.println("Multiplication: " + Calculator.multiplication(num1, num2));
 
         /*
-        * Time Greeting
+        * Time first.lesson.activity.Greeting
         * */
         int time;
 
@@ -41,7 +45,7 @@ public class Class01 {
         System.out.println(greeting_message);
 
         /*
-        * Shark Loan App
+        * Shark first.lesson.activity.Loan App
         * */
         System.out.println("This is a simple program where you discover how much you will pay for an loan. ");
         System.out.println("How much do you want? ");
