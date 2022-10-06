@@ -14,7 +14,6 @@ public class Class01 {
         int num1;
         int num2;
 
-        Calculator calculator = new Calculator();
         Scanner scan = new Scanner(System.in);
 
         System.out.println("This is a simple calculator. ");
@@ -24,10 +23,36 @@ public class Class01 {
         System.out.print("Enter the second number. ");
         num2 = scan.nextInt();
 
-        System.out.println("Sum: " + calculator.sum(num1, num2));
-        System.out.println("Subtraction: " + calculator.subtraction(num1, num2));
-        System.out.println("Division: " + calculator.division(num1, num2));
-        System.out.println("Multiplication: " + calculator.multiplication(num1, num2));
+        System.out.println("Sum: " + Calculator.sum(num1, num2));
+        System.out.println("Subtraction: " + Calculator.subtraction(num1, num2));
+        System.out.println("Division: " + Calculator.division(num1, num2));
+        System.out.println("Multiplication: " + Calculator.multiplication(num1, num2));
+
+        /*
+        * Time Greeting
+        * */
+        int time;
+
+        System.out.println("This is a simple program to greet you by a given time. ");
+        System.out.println("What time is it? ");
+        time = scan.nextInt();
+
+        String greeting_message = Greeting.greetUser(time);
+        System.out.println(greeting_message);
+
+        /*
+        * Shark Loan App
+        * */
+        System.out.println("This is a simple program where you discover how much you will pay for an loan. ");
+        System.out.println("How much do you want? ");
+        double loanValue = scan.nextDouble();
+
+        System.out.println("In how many installments? ");
+        int installments = scan.nextInt();
+
+        String loanWithRates = Loan.requiredLoan(loanValue, installments);
+        System.out.println(loanWithRates);
+
     }
 
 
